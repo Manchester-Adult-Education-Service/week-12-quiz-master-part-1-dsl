@@ -87,16 +87,16 @@ print()
 # HINT: You will need to use the **'int()'** function to convert the input from text to a number.
 #
 # Write your code below:
-print("--- Testing Basic Functions ---")
-print()
-answer1 = int(input("Q1: What is 7 X 5? "))
-print()
-if answer1 == 35:
-    print("Correct!")
-    player_score = (player_score + 1)
-else:
-    print("Incorrect! The answer was 35")
-print()
+# print("--- Testing Basic Functions ---")
+# print()
+# answer1 = int(input("Q1: What is 7 X 5? "))
+# print()
+# if answer1 == 35:
+#     print("Correct!")
+#     player_score = (player_score + 1)
+# else:
+#     print("Incorrect! The answer was 35")
+# print()
 # print(f"Your current score is {player_score}")
 # print()
 
@@ -132,17 +132,17 @@ print()
 # 6. Print the closing "--- End of Basic Test ---\n"
 #
 # Write your code below:
-answer2 = input("Q2: Which conditional keyword means 'otherwise, if'? ").lower()
-print()
-if answer2 == "elif":
-    print("You got it!")
-    player_score = (player_score + 1)
-else:
-    print("Not quite. It was ELIF.")
-print()
-print("-------------------------")
-print("--- End of Basic Test ---")
-print("-------------------------")
+# answer2 = input("Q2: Which conditional keyword means 'otherwise, if'? ").lower()
+# print()
+# if answer2 == "elif":
+#     print("You got it!")
+#     player_score = (player_score + 1)
+# else:
+#     print("Not quite. It was ELIF.")
+# print()
+# print("-------------------------")
+# print("--- End of Basic Test ---")
+# print("-------------------------")
 # print(f"Your current score is {player_score}")
 # print()
 
@@ -243,7 +243,11 @@ print(quiz_questions)
 # 4. **Comment out** the line that calls the function for now, as we will use it in Task 7.
 #
 # Write your code below:
-
+def run_quiz('questions'):
+    player_score = 0
+    max_score = len(quiz_questions)
+    for q in quiz_questions:
+        print()
 
 
 
