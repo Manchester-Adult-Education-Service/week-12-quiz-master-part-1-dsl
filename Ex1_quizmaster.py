@@ -87,7 +87,18 @@ print()
 # HINT: You will need to use the **'int()'** function to convert the input from text to a number.
 #
 # Write your code below:
-
+print("--- Testing Basic Functions ---")
+print()
+answer1 = int(input("Q1: What is 7 X 5? "))
+print()
+if answer1 == 35:
+    print("Correct!")
+    player_score = (player_score + 1)
+else:
+    print("Incorrect! The answer was 35")
+print()
+# print(f"Your current score is {player_score}")
+# print()
 
 
 
