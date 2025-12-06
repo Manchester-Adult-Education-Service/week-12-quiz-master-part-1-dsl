@@ -89,9 +89,9 @@ print()
 # Write your code below:
 # print("--- Testing Basic Functions ---")
 # print()
-# answer1 = int(input("Q1: What is 7 X 5? "))
+# answer1 = input("Q1: What is 7 X 5? ")
 # print()
-# if answer1 == 35:
+# if answer1.int() == 35:
 #     print("Correct!")
 #     player_score = (player_score + 1)
 # else:
@@ -208,7 +208,7 @@ quiz_questions = [
         'type': 'int'
     }
 ]
-print(quiz_questions)
+# print(quiz_questions)
 
 
 
@@ -243,13 +243,32 @@ print(quiz_questions)
 # 4. **Comment out** the line that calls the function for now, as we will use it in Task 7.
 #
 # Write your code below:
-def run_quiz('questions'):
+def run_quiz(questions):
     player_score = 0
     max_score = len(quiz_questions)
     for q in quiz_questions:
+        print(f"{q["question"]}")
         print()
-
-
+        answer = input("Answer: ")
+        if answer.title() == (q["answer"]):
+            print()
+            print("Correct")
+            print()
+            player_score = (player_score + 1)
+            print(f"Current score: {player_score}")
+            print()
+        else:
+            print()
+            print("Incorrect")
+            print()
+            print(f"Current score: {player_score}")
+            print()
+    percentage = round(player_score/len(quiz_questions)*100)
+    print(f"Final score {player_score} or {percentage}% correct")
+    if percentage > 50:
+        print("Excellent job!")
+    print()
+# run_quiz(quiz_questions)
 
 # -------------------------------------------
 # CHECKPOINT
