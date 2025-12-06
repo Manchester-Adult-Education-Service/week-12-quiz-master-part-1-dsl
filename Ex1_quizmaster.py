@@ -191,7 +191,24 @@ print("-------------------------")
 # ]
 #
 # Write your code below:
-
+quiz_questions = [
+    {
+        'question': 'What is the capital of New Zealand?',
+        'answer': 'Wellington',
+        'type': 'str'
+    },
+    {
+        'question': 'What is the fastest bird in the world?',
+        'answer': 'Peregrine Falcon',
+        'type': 'str'
+    },
+    {
+        'question': 'What is 4 cubed?',
+        'answer': '64',
+        'type': 'int'
+    }
+]
+print(quiz_questions)
 
 
 
