@@ -132,8 +132,19 @@ print()
 # 6. Print the closing "--- End of Basic Test ---\n"
 #
 # Write your code below:
-
-
+answer2 = input("Q2: Which conditional keyword means 'otherwise, if'? ").lower()
+print()
+if answer2 == "elif":
+    print("You got it!")
+    player_score = (player_score + 1)
+else:
+    print("Not quite. It was ELIF.")
+print()
+print("-------------------------")
+print("--- End of Basic Test ---")
+print("-------------------------")
+# print(f"Your current score is {player_score}")
+# print()
 
 
 # -------------------------------------------
